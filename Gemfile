@@ -7,7 +7,6 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
-
 gem 'pg'
 
 
@@ -20,6 +19,9 @@ group :development do
   gem 'guard-rspec', require: false
 end
 
+group :test do
+  gem 'database_cleaner'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
