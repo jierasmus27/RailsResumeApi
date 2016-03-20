@@ -36,6 +36,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    apipie-rails (0.3.6)
+      json
     arel (6.0.3)
     builder (3.2.2)
     coderay (1.1.0)
@@ -43,6 +45,11 @@ GEM
     database_cleaner (1.5.1)
     diff-lcs (1.2.5)
     erubis (2.7.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     ffi (1.9.10)
     formatador (0.2.5)
     globalid (0.3.6)
@@ -142,6 +149,8 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.0)
     shellany (0.0.1)
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
     slop (3.6.0)
     spring (1.6.4)
     sprockets (3.5.2)
@@ -160,12 +169,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  apipie-rails
   database_cleaner
+  factory_girl_rails (~> 4.0)
   guard-rspec
   pg
   rails (= 4.2.6)
   rails-api
   rspec-rails (~> 3.0)
+  shoulda-matchers
   spring
 
 BUNDLED WITH
